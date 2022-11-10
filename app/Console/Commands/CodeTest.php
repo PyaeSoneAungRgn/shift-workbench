@@ -40,7 +40,7 @@ class CodeTest extends Command
         });
 
         // Optional To Nullsafe
-        optional($user)->address;
+        $user?->address;
 
         return Command::SUCCESS;
     }
